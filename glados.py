@@ -8,7 +8,7 @@ if __name__ == '__main__':
 # 推送内容
     sendContent = ''
 # glados账号cookie 直接使用数组 如果使用环境变量需要字符串分割一下
-    cookies = os.environ.get("GLADOS_COOKIE", []).split("&")
+    cookies = os.environ.get("koa:sess=eyJ1c2VySWQiOjM3OTE4MywiX2V4cGlyZSI6MTcyNjU1NTI3NTU2MCwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=PhMhUd7UnB4W7sxzu1s1trDscOA; _gid=GA1.2.323323087.1713493174; _gat_gtag_UA_104464600_2=1; _ga=GA1.1.1596524711.1694177878; _ga_CZFVKMNT9J=GS1.1.1713493174.9.1.1713493834.0.0.0", []).split("&")
     if cookies[0] == "":
         print('未获取到COOKIE变量') 
         cookies = []
